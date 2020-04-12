@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["8080-af72c7ac-1379-4bf2-9c66-8104a6799f6f.ws-eu01.gitpod.io"]
+ALLOWED_HOSTS = ["8080-af72c7ac-1379-4bf2-9c66-8104a6799f6f.ws-eu01.gitpod.io","cycleology.herokuapp.com"]
 
 
 # Application definition
