@@ -1,0 +1,7 @@
+__pycache__
+__init__.cpython-37.pyc
+settings.cpython-37.pyc
+urls.cpython-37.pyc
+wsgi.cpython-37.pyc
+db.sqlite3env.py
+env.py
