@@ -5,3 +5,6 @@ urls.cpython-37.pyc
 wsgi.cpython-37.pyc
 db.sqlite3env.py
 env.py
+.gitignore
+.gitpod.dockerfile
+.gitpod.yml
