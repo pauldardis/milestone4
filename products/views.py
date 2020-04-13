@@ -77,7 +77,7 @@ def nutrition_products(request):
 
 
 def clearance_products(request):
-    """ Displays nutrition products """
+    """ Displays Clearance products """
     """ Paginate is filtered on product name """
     product_list = Product.objects.filter(catagory="Clearance").order_by('name')
     paginator = Paginator(product_list, 3)
