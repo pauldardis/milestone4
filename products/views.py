@@ -7,7 +7,7 @@ def all_products(request):
     """ Displays all products """
     """ Paginate is filtered on product name """
     product_list = Product.objects.filter().order_by('name')
-    paginator = Paginator(product_list, 3)
+    paginator = Paginator(product_list, 12)
     page = request.GET.get('page')
     try:
         products = paginator.page(page)
