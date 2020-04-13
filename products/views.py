@@ -35,7 +35,7 @@ def workshop_products(request):
 def assessory_products(request):
     """ Displays assessory products """
     """ Paginate is filtered on product name """
-    product_list = Product.objects.filter().order_by('name')
+    product_list = Product.objects.filter(catagory="Accessories").order_by('name')
     paginator = Paginator(product_list, 3)
     page = request.GET.get('page')
     try:
@@ -47,9 +47,9 @@ def assessory_products(request):
     return render(request, 'products.html', {"products": products})
 
 def components_products(request):
-    """ Displays components products """
+    """ Displays bike components products """
     """ Paginate is filtered on product name """
-    product_list = Product.objects.filter().order_by('name')
+    product_list = Product.objects.filter(catagory="Components").order_by('name')
     paginator = Paginator(product_list, 3)
     page = request.GET.get('page')
     try:
@@ -60,10 +60,11 @@ def components_products(request):
         products = paginator.page(paginator.num_pages)
     return render(request, 'products.html', {"products": products})
 
+
 def nutrition_products(request):
     """ Displays nutrition products """
     """ Paginate is filtered on product name """
-    product_list = Product.objects.filter().order_by('name')
+    product_list = Product.objects.filter(catagory="Nutrition").order_by('name')
     paginator = Paginator(product_list, 3)
     page = request.GET.get('page')
     try:
@@ -78,7 +79,7 @@ def nutrition_products(request):
 def clearance_products(request):
     """ Displays nutrition products """
     """ Paginate is filtered on product name """
-    product_list = Product.objects.filter().order_by('name')
+    product_list = Product.objects.filter(catagory="Clearance").order_by('name')
     paginator = Paginator(product_list, 3)
     page = request.GET.get('page')
     try:
