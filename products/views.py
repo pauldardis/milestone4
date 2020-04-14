@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
@@ -16,6 +16,16 @@ def all_products(request):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
     return render(request, 'products.html', {"products": products})
+
+def product_detail(request, pk):
+    """Create a view that returns a single Product object
+    based on the post ID (pk) and render it"""
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, "product_detail.html", {'product': product})
+
+
+
+
 
 
 def workshop_products(request):

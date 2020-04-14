@@ -1,8 +1,9 @@
 from django.conf.urls import url, include
-from .views import all_products, workshop_products, assessory_products, components_products, nutrition_products, clearance_products
+from .views import all_products, workshop_products, assessory_products, components_products, nutrition_products, clearance_products, product_detail
 
 urlpatterns = [
     url(r'^$', all_products, name='products'),
+    url(r'^(?P<pk>\d+)/$', product_detail, name='product_detail'),
     url(r'^workshop$', workshop_products, name='workshop_products'),
     url(r'^assessory$', assessory_products, name='assessory_products'),
     url(r'^components$', components_products, name='components_products'),
