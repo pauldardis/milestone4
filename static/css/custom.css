@@ -295,3 +295,17 @@ a.article, a.article:hover {
 
 
 /* Product card testing  */
+
+
+.btn-products-filter{
+    color: black;
+    background-color: #ffffffd7;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width:120px;
+    margin: 5px;
+    transition-duration: 0.5s
+}
+.btn-products-filter:hover{
+    color: black;
+    background-color: #7386D5;
+    transition-duration: 0.5s
