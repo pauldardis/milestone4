@@ -52,6 +52,15 @@ footer {
     margin: 0 auto;
 }
 
+.product-details {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
 caption p {
     word-wrap: break-word;
 }
@@ -309,3 +318,13 @@ a.article, a.article:hover {
     color: black;
     background-color: #7386D5;
     transition-duration: 0.5s
+
+
+.image-size{
+    height:100%;
+    width:auto;
+}
+
+.card-body {
+    text-align: center;
+}
