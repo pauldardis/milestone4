@@ -31,7 +31,7 @@ def product_detail(request, pk):
 def workshop_products(request):
     """ Displays all workshop products """
     """ Paginate is filtered on product name """
-    product_list = Product.objects.filter().order_by('name')
+    product_list = Product.objects.filter(catagory="Workshop").order_by('name')
     paginator = Paginator(product_list, 3)
     page = request.GET.get('page')
     try:
