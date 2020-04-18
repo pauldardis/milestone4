@@ -114,3 +114,86 @@ def electronics_products(request):
         products = paginator.page(paginator.num_pages)
     return render(request, 'products.html', {"products": products})
 
+def bottles_products(request):
+    """ Displays Bottles products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="bottles").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
+
+def seat_products(request):
+    """ Displays Bottles products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="seat").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
+
+def carrier_products(request):
+    """ Displays Bottles products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="carrier").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
+
+def helmet_products(request):
+    """ Displays Bottles products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="helmet").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
+
+def lights_products(request):
+    """ Displays Bottles products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="lights").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
+
+def locks_products(request):
+    """ Displays Bottles products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="locks").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
