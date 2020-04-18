@@ -1,36 +1,93 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="card text-center image-size" >
-    <div class="row no-gutters">
-        <div class="col-md-4">
-            <!-- <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div> -->
-            <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">{{ product.description }}</p>
-                <p class="card-text">{{ product.price }} <i class="fas fa-euro-sign"></i></p>
-            </div>
-            <form method="post" action="{% url 'add_to_cart' product.id %}">
-                {% csrf_token %}
-                <div class="input-group">
-                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity"required>
-                    <br>
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add to Cart</button>
-                        </span>
-                </div>
-            </form>
-            <br>
-            <form>
-             <input class="btn btn-primary" style="margin-bottom: 10px;" type="button" value="Back to Products Page" onclick="history.back()">
-            </form>
-          
-        </div>
-    </div>
+
+<div class="container-fluid">
+    <div class="content-wrapper">	
+		<div class="item-container">	
+			<div class="container">	
+				<div class="col-md-12">
+					<div class="product col-md-3 service-image-left">
+                    
+						<center>
+							<img id="item-display" src="" alt=""></img>
+						</center>
+					</div>
+					
+					<div class="container service1-items col-sm-2 col-md-2 pull-left">
+						<center>
+							<a id="item-1" class="service1-item">
+								<img src="" alt=""></img>
+							</a>
+							<a id="item-2" class="service1-item">
+								<img src="" alt=""></img>
+							</a>
+							<a id="item-3" class="service1-item">
+								<img src="" alt=""></img>
+							</a>
+						</center>
+					</div>
+				</div>
+					
+				<div class="col-md-7">
+					<div class="product-title">{{ product.name }}</div>
+					<div class="product-desc">Nedd somthing in here </div>
+					<hr>
+					<div class="product-price">€ {{ product.price }}</div>
+					<div class="product-stock">In Stock</div>
+					<hr>
+
+
+					<div class="btn-group cart">
+                        <form method="post" action="{% url 'add_to_cart' product.id %}">
+                            {% csrf_token %}
+                            <div class="input-group">
+                                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity"required>
+                                <br>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="submit">Add to Cart</button>
+                                </span>
+                            </div>
+                        </form>
+					</div>
+
+                    
+
+				</div>
+			</div> 
+		</div>
+		<div class="container-fluid">		
+			<div class="col-md-12 product-info">
+					<ul id="myTab" class="nav nav-tabs nav_tabs">
+						<li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
+						<li><a href="#service-two" data-toggle="tab">PRODUCT INFO</a></li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active" id="service-one">
+						 
+							<section class="container product-info">
+								<h3>{{ product.name }} </h3>
+                                {{ product.description }}
+
+							</section>
+										  
+						</div>
+					<div class="tab-pane fade" id="service-two">
+						
+						<section class="container">
+                        <h3>{{ product.name }} </h3>
+                        {{ product.description }}
+								
+						</section>
+						
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</div>
 </div>
+
    
 
 {% endblock %}

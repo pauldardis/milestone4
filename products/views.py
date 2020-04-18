@@ -100,4 +100,17 @@ def clearance_products(request):
         products = paginator.page(paginator.num_pages)
     return render(request, 'products.html', {"products": products})
 
-    
+def electronics_products(request):
+    """ Displays Clearance products """
+    """ Paginate is filtered on product name """
+    product_list = Product.objects.filter(subcatagory="electronics").order_by('name')
+    paginator = Paginator(product_list, 3)
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
+    return render(request, 'products.html', {"products": products})
+

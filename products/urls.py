@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from .views import all_products, workshop_products, assessory_products, components_products, nutrition_products, clearance_products, product_detail
+from .views import all_products, workshop_products, assessory_products, components_products, nutrition_products, clearance_products, product_detail,electronics_products
 
 urlpatterns = [
     url(r'^$', all_products, name='products'),
@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^components$', components_products, name='components_products'),
     url(r'^nutrition$', nutrition_products, name='nutrition_products'),
     url(r'^clearance$', clearance_products, name='clearance_products'),
+    url(r'^electronics$', electronics_products, name='electronics_products'),
 ]
