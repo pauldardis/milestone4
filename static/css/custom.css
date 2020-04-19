@@ -3,6 +3,18 @@ body {
     background: #fafafa;
 }
 
+
+.pablo {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+
 footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -474,3 +486,8 @@ a.article, a.article:hover {
 .service-image-left > center > img,.service-image-right > center > img{
 	max-height: 155px;
 }
+
+
+
+
+

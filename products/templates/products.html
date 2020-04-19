@@ -38,13 +38,13 @@
 		<div class="pagination">
 			<span class="step-links">
         {% if products.has_previous %}
-            <a href="?page={{ products.previous_page_number }}" class="btn btn-star-trek no-margin">Previous</a>
+            <a href="?page={{ products.previous_page_number }}" class="btn  no-margin">Previous</a>
         {% endif %}
         <span class="current">
             Page {{ products.number }} of {{ products.paginator.num_pages }}
         </span>
 			{% if products.has_next %}
-			<a href="?page={{ products.next_page_number }}" class="btn btn-star-trek no-margin">Next</a>
+			<a href="?page={{ products.next_page_number }}" class="btn  no-margin">Next</a>
 			{% endif %}
 			</span>
 		</div>

@@ -2,13 +2,14 @@
 
 {% block content %}
 
+
 <hr>
 <div class="container-fluid">
     <div class="content-wrapper">
         <div class="item-container">
             <div class="container">
-                <div class="col-md-12">
-                    <div class="bs-example">
+                <div class="col-12 col-md-12">
+                    <div class=" col-md-6">
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <!-- Carousel indicators -->
                             <ol class="carousel-indicators">
@@ -17,15 +18,15 @@
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
                             </ol>
                             <!-- Wrapper for carousel items -->
-                            <div class="carousel-inner">
+                            <div class="carousel-inner h-100">
                                 <div class="carousel-item active" >
-                                    <img src='{{ MEDIA_URL }}{{ product.image }}' alt="First Slide">
+                                <img srcset="{{ MEDIA_URL }}{{ product.image }}" alt="First Slide" class="d-block img-fluid">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src='{{ MEDIA_URL }}{{ product.image2 }}' alt="Second Slide">
+                                <img srcset="{{ MEDIA_URL }}{{ product.image2 }}" alt="Second Slide" class="d-block img-fluid">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src='{{ MEDIA_URL }}{{ product.image3 }}' alt="Third Slide">
+                                <img srcset="{{ MEDIA_URL }}{{ product.image3 }}" alt="Third Slide" class="d-block img-fluid">
                                 </div>
                             </div>
                             <!-- Carousel controls -->
@@ -37,13 +38,13 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class=" col-md-6">
                         <div class="product-title">
                             <h3>{{ product.name }} </h3></div>
                         <div class="product-desc"> {{ product.brief_description }} </div>
                         <hr>
                         <div class="product-price">€ {{ product.price }}</div>
-                        <div class="product-stock">In Stock</div>
+                        <!-- <div class="product-stock">In Stock</div> -->
                         <hr>
                         <div class="btn-group cart">
                             <form method="post" action="{% url 'add_to_cart' product.id %}">
