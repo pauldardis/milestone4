@@ -1,9 +1,10 @@
 from django.db import models
+from .choices import PRODUCT_CATAGORY, PRODUCT_SUBCATAGORY
 
 # Create your models here.
 class Product(models.Model):
-    catagory = models.CharField(max_length=254, default='')
-    subcatagory = models.CharField(max_length=254, default='')
+    catagory = models.CharField(max_length=254, choices=PRODUCT_CATAGORY)
+    subcatagory = models.CharField(max_length=254, choices=PRODUCT_SUBCATAGORY)
     name = models.CharField(max_length=254, default='')
     description = models.TextField(default='')
     brief_description = models.TextField(null = True, blank=True)
