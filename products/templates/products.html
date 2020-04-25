@@ -8,27 +8,27 @@
     {% for product in products %}
        <div class="col-lg-4 col-md-6 mb-4">
             <div class=" card h-100">
-              <a href="{% url 'product_detail' product.id %}"><div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div></a>
+              <a href="{% url 'product_detail' product.id %}"><div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image1 }}')"></div></a>
                 <div class="card-body">
                     <h4 class="card-title text-center">
                     <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
                     </h4>
                     <h5 class= "text-center">€{{ product.price }}</h5>
-                                        <form method="post" action="{% url 'add_to_cart' product.id %}">
+                    <div class= "d-flex justify-content-center">
+                        <form class="form-inline" method="post" action="{% url 'add_to_cart' product.id %}">
                         {% csrf_token %}
-                        <div class="input-group">
-                            <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity"required>
-                            <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Quick Buy</button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-
+                            <div class="input-group">
+                                <div class="input-group-addon">Qty</div>
+                                <input name="quantity" type="number" min="1" max="999"  class="form-control"  required>
+                                <div class="input-group-btn ">
+                                <button class="btn btn-success  glyphicon glyphicon-plusX" aria-hidden="true" type="submit"> BUY</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+       </div>
     {% endfor %}
 </div>
 
