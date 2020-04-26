@@ -4,6 +4,8 @@ body {
 }
 
 
+
+
 .pablo {
     background-size: contain;
     background-position: center center;
@@ -336,11 +338,12 @@ a.article, a.article:hover {
     margin: 5px;
     transition-duration: 0.5s
 }
+
 .btn-products-filter:hover{
     color: black;
     background-color: #7386D5;
-    transition-duration: 0.5s
-
+    transition-duration: 0.5s;
+}
 
 .image-size{
     height:100%;
@@ -350,8 +353,6 @@ a.article, a.article:hover {
 .card-body {
     text-align: center;
 }
-
-
 
 /* Product details  */
 
@@ -367,14 +368,12 @@ a.article, a.article:hover {
 					PRODUCTS
 *********************************************/
 
-.product{
-	border: 1px solid #dddddd;
-	height: 321px;
-}
 
-.product>img{
-	max-width: 230px;
-}
+
+
+
+
+
 
 .product-rating{
 	font-size: 20px;
