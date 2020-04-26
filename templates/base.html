@@ -19,7 +19,7 @@
    <body>
       <!-- <div class="wrapper">
          </div> -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top top-navbar">
          <div class="container">
            <a class="navbar-brand" href="#">
                 <img src="http://placehold.it/50x20?text=Logo" width="30" height="30" class="d-inline-block align-center" alt="">
@@ -54,35 +54,123 @@
             </ul>
          </div>
       </nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="#">Navbar</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTest" aria-controls="navbarTest" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarTest">
-            <ul class="navbar-nav">
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                     <a class="dropdown-item" href="#">Action</a>
-                     <a class="dropdown-item" href="#">Another action</a>
-                     <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-               </li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                     <div class="container">
+           <a class="navbar-brand" href="#">
+                <img src="http://placehold.it/50x20?text=Logo" width="30" height="30" class="d-inline-block align-center" alt="">
+                CycleOlogy
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbottom" aria-controls="navbarbottom" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarbottom">
+                     <ul class="nav navbar-nav navbar-right ">
+                 <li class="active">
+                    <a href="#AccessoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accessories</a>
+                    <ul class="collapse list-unstyled" id="AccessoriesSubmenu">
+                        <li>
+                            <a href="{% url 'assessory_products' %}">All Accessories</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'electronics_products' %}">Electronics</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'bottles_products' %}">Bottles</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'seat_products' %}">Child Seats & Trailers</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'helmet_products' %}">Helmets</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'lights_products' %}">Lights</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'locks_products' %}">Locks</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+                    <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+                        <li>
+                            <a href="#">All Components</a>
+                        </li>
+                        <li>
+                            <a href="#">Brakes</a>
+                        </li>
+                        <li>
+                            <a href="#">Cables</a>
+                        </li>
+                        <li>
+                            <a href="#">Drive Chain</a>
+                        </li>
+                        <li>
+                            <a href="#">Finishing Kit</a>
+                        </li>
+                        <li>
+                            <a href="#">Tyres & Tubes</a>
+                        </li>
+                        <li>
+                            <a href="#">Wheels </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#nutritionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nutrition</a>
+                    <ul class="collapse list-unstyled" id="nutritionSubmenu">
+                        <li>
+                            <a href="#">All Nutrition</a>
+                        </li>
+                        <li>
+                            <a href="#">Energy Food</a>
+                        </li>
+                        <li>
+                            <a href="#">Energy Drink</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#workshopSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Workshop</a>
+                    <ul class="collapse list-unstyled" id="workshopSubmenu">
+                        <li>
+                            <a href="#">All Workshop</a>
+                        </li>
+                        <li>
+                            <a href="#">Tools</a>
+                        </li>
+                        <li>
+                            <a href="#">Lubricants & Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Storage/Workstands</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#workshopSubmenu" data-toggle="collapse" aria-expanded="false" >Clearance</a>
+                </li>
             </ul>
-         </div>
+            </div>
       </nav>
+      <hr>
+                  <div class="container">
+            {% if messages %}
+                <div class="alert alert-success">
+                    <div class="messages">
+                        {% for message in messages %} {{ message }} {% endfor %}
+                    </div>
+                    </div>
+            {% endif %}
+
+
+
+
+
+
+
+     
       {% block content %} {% endblock %}
       <footer>
          <div class="container">

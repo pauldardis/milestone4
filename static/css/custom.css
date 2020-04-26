@@ -498,3 +498,14 @@ a.article, a.article:hover {
   height: 100px;
   border: 1px solid blue;
 }
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.top-navbar {
+    margin-bottom: 0px;
+
+}
