@@ -36,4 +36,19 @@ def adjust_cart(request, id):
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
 
-    
+
+def cart_item_delete(request, item_id):
+
+    """
+    User will be able to remove selected items from the shopping
+    cart. This option is availible in the cart view
+    """
+    cart = request.session.get('cart', {})
+
+    if request.method == "POST":            
+        if cart and cart.get(item_id):
+            cart.pop(item_id)
+            request.session["cart"] = cart
+
+    return redirect(reverse("view_cart"))
+        

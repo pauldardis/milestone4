@@ -23,6 +23,10 @@
                             </div>
                         </div>
                     </form>
+                                                            <form class="delete-form" action="{% url 'cart_item_delete' item.id %}" method="post">
+                                            {% csrf_token %}
+                                            <button type="submit" class="bin-btn"><span><i class="fas fa-trash-alt"></i></span></button>
+                                        </form>
                 </div>
             </div>
             <div class="card-footer">
