@@ -160,16 +160,16 @@ a, a:hover, a:focus {
 }
 
 
-#sidebar {
+/* #sidebar {
     min-width: 250px;
     max-width: 250px;
     background: #7386D5;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
-}
+} */
 
-#sidebar.active {
+/* #sidebar.active {
     margin-left: -250px;
     transform: rotateY(100deg);
 }
@@ -202,8 +202,8 @@ a, a:hover, a:focus {
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
-}
-
+} */
+/* 
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -244,13 +244,13 @@ a.article, a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
-
+ */
 
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#content {
+/* #content {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
@@ -289,13 +289,13 @@ a.article, a.article:hover {
     transform: none;
     opacity: 1;
     margin: 5px auto;
-}
+} */
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
         transform: rotateY(90deg);
@@ -324,7 +324,7 @@ a.article, a.article:hover {
         transform: rotate(-45deg) translate(1px, -1px);
     }
 
-}
+} */
 
 
 /* Product card testing  */
@@ -507,5 +507,10 @@ a.article, a.article:hover {
 
 .top-navbar {
     margin-bottom: 0px;
+
+}
+
+.bottom-nav {
+    background: #716A66;
 
 }
