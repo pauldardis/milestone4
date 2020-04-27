@@ -54,6 +54,7 @@
             </ul>
          </div>
         </nav>
+        
 
         
         <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
@@ -66,33 +67,33 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarbottom">
-                     <ul class="nav navbar-nav .navbar-text">
-                 <li class="nav-item active">
-                    <a href="#AccessoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accessories</a>
-                    <ul class="collapse list-unstyled" id="AccessoriesSubmenu">
-                        <li>
-                            <a href="{% url 'assessory_products' %}">All Accessories</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'electronics_products' %}">Electronics</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'bottles_products' %}">Bottles</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'seat_products' %}">Child Seats & Trailers</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'helmet_products' %}">Helmets</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'lights_products' %}">Lights</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'locks_products' %}">Locks</a>
-                        </li>
-                    </ul>
-                </li>
+                     <ul class="nav navbar-nav navbar-text">
+                        <li class="nav-item active">
+                            <a href="#AccessoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accessories</a>
+                                <ul class="collapse list-unstyled" id="AccessoriesSubmenu">
+                                    <li>
+                                        <a href="{% url 'assessory_products' %}">All Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'electronics_products' %}">Electronics</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'bottles_products' %}">Bottles</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'seat_products' %}">Child Seats & Trailers</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'helmet_products' %}">Helmets</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'lights_products' %}">Lights</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'locks_products' %}">Locks</a>
+                                    </li>
+                                </ul>
+                            </li>
                 <li class="">
                     <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
                     <ul class="collapse list-unstyled" id="ComponentsSubmenu">
@@ -157,7 +158,7 @@
                     <div  class=" search-test d-flex   no-padding">
                         <form action="{% url 'search' %}" method="get">
                             <input type="text" name="q">
-                            <button type="submit">Search</button>
+                            <button class="btn btn-light" type="submit">Search</button>
                         </form>
                     </div>
                 </li>
@@ -166,6 +167,7 @@
 
 
             </div>
+                     </div>
         </nav>
    
                   <div class="container">
