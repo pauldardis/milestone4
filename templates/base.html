@@ -17,167 +17,172 @@
       {% block head_js %} {% endblock head_js %}
    </head>
    <body>
-      <!-- <div class="wrapper">
-         </div> -->
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top top-navbar">
-         <div class="container">
-           <a class="navbar-brand" href="/">
+            <div class="container">
+                <a class="navbar-brand" href="/">
                 <img src="http://placehold.it/50x20?text=Logo" width="30" height="30" class="d-inline-block align-center" alt="">
                 CycleOlogy
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-               <ul class="nav navbar-nav navbar-right ">
-                  {% if user.is_authenticated %}
-                  <li class="nav-item active"><a class="nav-link"  href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
-                  <li class="nav-item active"><a class="nav-link"  href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
-                  {%  else %}
-                  <li class="nav-item active"><a class="nav-link" href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
-                  {% endif %}
-                  <li>
-                  </li>
-               </ul>
-            </div>
-            <ul class="nav navbar-nav navbar-right ">
-               <li class="nav-item active">
-                  <a  class="nav-link" href="{% url 'view_cart' %}">
-                  <i class=" fas fa-shopping-basket navbar-icon"></i> Cart
-                  {% if product_count > 0 %}
-                  <label class="badge badge-warning">{{ product_count }}</label>
-                  {% endif %}
-                  </a>
-               </li>
-            </ul>
-         </div>
-        </nav>
-        
-
-        
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-                     <div class="container">
-           <a class="navbar-brand" href="#">
-                <img src="" width="30" height="30" class="d-inline-block align-center" alt="">
-                
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbottom" aria-controls="navbarbottom" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarbottom">
-                     <ul class="nav navbar-nav navbar-text">
-                        <li class="nav-item active">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse padding-left-0" id="navbarResponsive">
+                    <ul class="nav navbar-nav navbar-text  align-middle text-center">
+                        <li class="">
                             <a href="#AccessoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accessories</a>
-                                <ul class="collapse list-unstyled" id="AccessoriesSubmenu">
-                                    <li>
-                                        <a href="{% url 'assessory_products' %}">All Accessories</a>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'electronics_products' %}">Electronics</a>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'bottles_products' %}">Bottles</a>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'seat_products' %}">Child Seats & Trailers</a>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'helmet_products' %}">Helmets</a>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'lights_products' %}">Lights</a>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'locks_products' %}">Locks</a>
-                                    </li>
-                                </ul>
-                            </li>
-                <li class="">
-                    <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
-                    <ul class="collapse list-unstyled" id="ComponentsSubmenu">
-                        <li>
-                            <a href="#">All Components</a>
+                            <ul class="collapse list-unstyled" id="AccessoriesSubmenu">
+                                <li>
+                                    <a href="{% url 'assessory_products' %}">All Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'electronics_products' %}">Electronics</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'bottles_products' %}">Bottles</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'seat_products' %}">Child Seats </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'helmet_products' %}">Helmets</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'lights_products' %}">Lights</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'locks_products' %}">Locks</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Brakes</a>
+                        <li class="">
+                            <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+                            <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+                                <li>
+                                    <a href="#">All Components</a>
+                                </li>
+                                <li>
+                                    <a href="#">Brakes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cables</a>
+                                </li>
+                                <li>
+                                    <a href="#">Drive Chain</a>
+                                </li>
+                                <li>
+                                    <a href="#">Finishing Kit</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tyres & Tubes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wheels </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Cables</a>
+                        <li class="">
+                            <a href="#nutritionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nutrition</a>
+                            <ul class="collapse list-unstyled" id="nutritionSubmenu">
+                                <li>
+                                    <a href="#">All Nutrition</a>
+                                </li>
+                                <li>
+                                    <a href="#">Energy Food</a>
+                                </li>
+                                <li>
+                                    <a href="#">Energy Drink</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Drive Chain</a>
+                        <li class="">
+                            <a href="#workshopSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Workshop</a>
+                            <ul class="collapse list-unstyled" id="workshopSubmenu">
+                                <li>
+                                    <a href="#">All Workshop</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tools</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lub & Clean</a>
+                                </li>
+                                <li>
+                                    <a href="#">Workstands</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Finishing Kit</a>
+                        <li class="">
+                            <a href="#clearanceSubmenu"  aria-expanded="false" >Clearance</a>
                         </li>
-                        <li>
-                            <a href="#">Tyres & Tubes</a>
+                        <li class="">
+                            <div  class=" search-test">
+                                <form class="form-inline" action="{% url 'search' %}" method="get">
+                                    <input class="form-control" name="q" type="text" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#">Wheels </a>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item active"><a class="nav-link"  href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
+                        <li class="nav-item active"><a class="nav-link"  href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                        {%  else %}
+                        <li class="nav-item active "><a class="nav-link" href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Register</a></li>
+                        <li class="nav-item active "><a class="nav-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-text margin-l-r-0 align-middle text-center">
+                                            <li class="nav-item active">
+                        <a  class="nav-link" href="{% url 'view_cart' %}">
+                        <i class=" fas fa-shopping-basket  navbar-icon"></i> Cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                        </a>
                         </li>
                     </ul>
-                </li>
-                <li class="">
-                    <a href="#nutritionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nutrition</a>
-                    <ul class="collapse list-unstyled" id="nutritionSubmenu">
-                        <li>
-                            <a href="#">All Nutrition</a>
-                        </li>
-                        <li>
-                            <a href="#">Energy Food</a>
-                        </li>
-                        <li>
-                            <a href="#">Energy Drink</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#workshopSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Workshop</a>
-                    <ul class="collapse list-unstyled" id="workshopSubmenu">
-                        <li>
-                            <a href="#">All Workshop</a>
-                        </li>
-                        <li>
-                            <a href="#">Tools</a>
-                        </li>
-                        <li>
-                            <a href="#">Lubricants & Cleaning</a>
-                        </li>
-                        <li>
-                            <a href="#">Storage/Workstands</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="active">
-                    <a href="#clearanceSubmenu"  aria-expanded="false" >Clearance</a>
-                </li>
-                 <li class="active">
-                    <div  class=" search-test d-flex   no-padding">
-                        <form action="{% url 'search' %}" method="get">
-                            <input type="text" name="q">
-                            <button class="btn btn-light" type="submit">Search</button>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-            
+                </div>
 
 
+
+
+
+
+
+
+                
+                <!--       nav navbar-nav navbar-text align-middle text-center -->
+                <!-- <ul class="nav navbar-nav navbar-text align-middle text-center  ">
+                    <li class="nav-item active">
+                        <a  class="nav-link" href="{% url 'view_cart' %}">
+                        <i class=" fas fa-shopping-basket navbar-icon"></i> Cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                        </a>
+                    </li>
+                </ul> -->
             </div>
-                     </div>
         </nav>
+
+
    
-                  <div class="container">
+        <div class="container">
             {% if messages %}
-                <div class="alert alert-success">
-                    <div class="messages">
-                        {% for message in messages %} {{ message }} {% endfor %}
-                    </div>
-                    </div>
+            <div class="alert alert-success">
+                <div class="messages">
+                    {% for message in messages %} {{ message }} {% endfor %}
+                </div>
+            </div>
             {% endif %}
+        <!-- **************** missing a div from here************ -->
+        <!-- **************** missing a div from here************ -->     
+        <!-- **************** missing a div from here************ -->
+        <!-- **************** missing a div from here************ -->    
+
+        
 
 
            

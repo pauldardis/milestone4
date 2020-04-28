@@ -578,3 +578,12 @@ footer {
 footer a {
     color: #f8f9fa!important
 }
+
+.padding-left-0 {
+    padding-left: 0px;
+}
+
+.margin-l-r-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
