@@ -596,3 +596,7 @@ footer a {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.delete-button {
+    margin-left: 15px;
+}
