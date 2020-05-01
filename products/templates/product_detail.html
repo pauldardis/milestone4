@@ -46,8 +46,9 @@
                         <div class="product-price">€ {{ product.price }}</div>
                         <!-- <div class="product-stock">In Stock</div> -->
                         <hr>
+                        
                         <div class="btn-group cart">
-                            <form method="post" action="{% url 'add_to_cart' product.id %}">
+                            <form method="post" action="{% url 'add_to_cart_details' product.id %}">
                                 {% csrf_token %}
                                 <div class="input-group">
                                     <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" required>
