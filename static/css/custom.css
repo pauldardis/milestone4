@@ -613,5 +613,8 @@ footer a {
 }
 
 
-
-
+.footer-fix-bottom {
+    position: sticky; 
+    z-index: 20; 
+    bottom:  0;
+}
