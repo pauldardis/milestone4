@@ -59,6 +59,11 @@ def adjust_cart(request, id):
         cart.pop(id)
     
     request.session['cart'] = cart
+    message = format_html(
+        'Your cart has been updated ')
+    messages.success(
+        request, message)
+
     return redirect(reverse('view_cart'))
 
 
@@ -74,6 +79,10 @@ def cart_item_delete(request, item_id):
         if cart and cart.get(item_id):
             cart.pop(item_id)
             request.session["cart"] = cart
+    message = format_html(
+        'The item has been deleted ')
+    messages.success(
+        request, message)
 
     return redirect(reverse("view_cart"))
         

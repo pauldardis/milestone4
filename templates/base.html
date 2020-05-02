@@ -27,7 +27,7 @@
       {% block head_js %} {% endblock head_js %}
    </head>
    <body>
-   <nav class="navbar   navbar-expand-lg navbar-dark bg-dark">
+   <nav class="navbar   navbar-expand-lg navbar-dark bg-dark nav-fix-top " >
         <a class="navbar-brand nav-logo" href="/">
             <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/LOGO-SMALL.jpg" class="d-inline-block align-center" alt="Logo for CycleOlogy"> CycleOlogy
         </a>
@@ -73,37 +73,34 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="">All Components</a>
+                        <a class="dropdown-item" href="{% url 'components_products' %}">All Components</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Brakes</a>
-                        <a class="dropdown-item" href="">Cables</a>
-                        <a class="dropdown-item" href="">Drive Chain</a>
-                        <a class="dropdown-item" href="">Finishing Kit</a>
-                        <a class="dropdown-item" href="">Tyres & Tubes</a>
-                        <a class="dropdown-item" href="">Wheels</a>
+                        <a class="dropdown-item" href="{% url 'break_products' %}">Brakes</a>
+                        <a class="dropdown-item" href="{% url 'drivechain_products' %}">Drive Chain</a>
+                        <a class="dropdown-item" href="{% url 'tyers_products' %}">Tyres & Tubes</a>
+                        <a class="dropdown-item" href="{% url 'wheels_products' %}">Wheels</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nutrition</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="">All Nutrition</a>
+                        <a class="dropdown-item" href="{% url 'nutrition_products' %}">All Nutrition</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Energy Food</a>
-                        <a class="dropdown-item" href="">Energy Drink</a>
+                        <a class="dropdown-item" href="{% url 'energyfood_products' %}">Energy Food</a>
+                        <a class="dropdown-item" href="{% url 'energydrink_products' %}">Energy Drink</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Workshop</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                        <a class="dropdown-item" href="">All Workshop</a>
+                        <a class="dropdown-item" href="{% url 'workshop_products' %}">All Workshop</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Lub & Clean</a>
-                        <a class="dropdown-item" href="">Tools</a>
-                        <a class="dropdown-item" href="">Workstands</a>
+                        <a class="dropdown-item" href="{% url 'lubricants_products' %}">Lub & Clean</a>
+                        <a class="dropdown-item" href="{% url 'tools_products' %}">Tools</a>
                     </div>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="/">Clearance</a>
+                    <a class="nav-link" href="{% url 'clearance_products' %}">Clearance</a>
                 </li>
                                         <li class="">
                             <div  class=" search-test">
@@ -176,9 +173,9 @@
      
       {% block content %} {% endblock %}
         </div>
-      <footer>
+      <footer class="" >
          <div class="container">
-            <p>Made Blood, Sweat and lots of Tears......</p>
+            <p>Made with Blood, Sweat and lots of Tears......</p>
          </div>
       </footer>
       <!-- jQuery CDN - Slim version (=without AJAX) -->
