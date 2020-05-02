@@ -20,6 +20,8 @@ from products import urls as urls_products
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
+from home import urls as urls_home
+
 from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
@@ -32,5 +34,7 @@ urlpatterns = [
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
+    url(r'^home/', include(urls_home)),
+    url(r'^index/', include(urls_home)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
