@@ -89,7 +89,7 @@ footer a {
 }
 
 
-.footer-fix-bottom {
+/* .footer-fix-bottom {
     position: sticky; 
     z-index: 20; 
     bottom:  0;
@@ -103,7 +103,7 @@ footer a {
  background-color: red;
   color: white;
   text-align: center;
-}
+} */
 
 /* base end */
 
