@@ -4,6 +4,8 @@ from django.core.urlresolvers import reverse
 from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
+from cycleology.settings import EMAIL_HOST_USER
+from django.core.mail import send_mail
 
 
 # Create your views here.
