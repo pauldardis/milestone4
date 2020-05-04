@@ -1,64 +1,61 @@
-{% extends 'base.html' %}
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <div class="container-fluid">
     <div class="content-wrapper">
         <div class="item-container">
             <div class="container">
 
-<div class="row row-flex">
+                <div class="row row-flex">
 
-
-    {% for product in products %}
-       <div class="col-lg-4 col-md-6 mb-4">
-            <div class=" card h-100">
-              <a href="{% url 'product_detail' product.id %}"><div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image1 }}')"></div></a>
-                <div class="card-body">
-                    <h4 class="card-title text-center">
+                    {% for product in products %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class=" card h-100">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image1 }}')"></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
                     <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
                     </h4>
-                    <h5 class= "text-center">€{{ product.price }}</h5>
-                    <div class= "d-flex justify-content-center">
-                        <form class="form-inline" method="post" action="{% url 'add_to_cart' product.id %}">
-                        {% csrf_token %}
-                            <div class="input-group">
-                                <div class="input-group-addon">Qty</div>
-                                <input name="quantity" type="number" value="1" min="1" max="999"  class="form-control"  required>
-                                <div class="input-group-btn ">
-                                <button class="btn btn-success  glyphicon glyphicon-plusX" aria-hidden="true" type="submit"> BUY</button>
+                                <h5 class="text-center">€{{ product.price }}</h5>
+                                <div class="d-flex justify-content-center">
+                                    <form class="form-inline" method="post" action="{% url 'add_to_cart' product.id %}">
+                                        {% csrf_token %}
+                                        <div class="input-group">
+                                            <div class="input-group-addon">Qty</div>
+                                            <input name="quantity" type="number" value="1" min="1" max="999" class="form-control" required>
+                                            <div class="input-group-btn ">
+                                                <button class="btn btn-success  glyphicon glyphicon-plusX" aria-hidden="true" type="submit"> BUY</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
+                    {% endfor %}
                 </div>
-            </div>
-       </div>
-    {% endfor %}
-</div>
 
-<div class="test">
-    	{% if products.count != 0 %}
-	<div class="d-flex justify-content-center">
-		<div class="pagination">
-			<span class="step-links">
+                <div class="test">
+                    {% if products.count != 0 %}
+                    <div class="d-flex justify-content-center">
+                        <div class="pagination">
+                            <span class="step-links">
         {% if products.has_previous %}
             <a href="?page={{ products.previous_page_number }}" class="btn  no-margin">Previous</a>
         {% endif %}
         <span class="current">
             Page {{ products.number }} of {{ products.paginator.num_pages }}
-        </span>
-			{% if products.has_next %}
-			<a href="?page={{ products.next_page_number }}" class="btn  no-margin">Next</a>
-			{% endif %}
-			</span>
-		</div>
-	</div>
-	{% endif %}
-</div>
+        </span> {% if products.has_next %}
+                            <a href="?page={{ products.next_page_number }}" class="btn  no-margin">Next</a> {% endif %}
+                            </span>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
+    </div>
+</div>
+
 
 {% endblock %}
