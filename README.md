@@ -1,38 +1,108 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
-
-Welcome pauldardis,
-
-[![Build Status](https://travis-ci.org/pauldardis/milestone4.svg?branch=master)](https://travis-ci.org/pauldardis/milestone4)
 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+# CycleOlogy - Milestone Project 4
+***
 
-## Gitpod Reminders
+## Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+ * List item
+ *	Fuctionality of the Project
+ *	User Experience 
+	 *	User Stories
+	 *	Design 
+	 *	Wireframes
+*	Technology Used 
+*	Datbase
+*	Features 
+*	Testing 
+*	Deployment 
+*	Credits 
 
-`python3 -m http.server`
+***
+## Welcome to CycleOlogy 
 
-A blue button should appear to click: *Make Public*,
+![enter image description here](https://cycleology.s3-eu-west-1.amazonaws.com/media/images/LOGO-SMALL.jpg)
 
-Another blue button should appear to click: *Open Browser*.
+***
+## User Experience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
 
-A blue button should appear to click: *Make Public*,
+#### Public User
+-	As a public user, I want to be able to view all products on any device (mobile / tablet / desktop)
+-	As a public user, I want to be able to pick a product category
+-	As a public user, I want to be able to pick a product from a subcategory
+-	As a public user, I want to be able to search for a product
+-	As a public user, I want to be able to get more information on a product
+-	As a public user, I want to be able to add a product to my shopping cart
+-	As a public user, I want to be able to add a quantity of the same item
+-	As a public user, I want to be able view my shopping cart
+-	As a public user, I want to be able to adjust the quantity in my shopping cart for a specific product
+-	As a public user, I want to be able to delete an item in my shopping cart.
+-	As a public user I want the able to purchase the items in my shopping cart
+-	As a public user I want to be able to register as a user
+-	As a public user, I want to be able to change my password
+-	As a public user, I want to be able to send the company a message
 
-Another blue button should appear to click: *Open Browser*.
+#### Administer User
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+ - As a Administer User, I want to be able to add products
+ - As a Administer User, I want to be able to delete products
+ - As a Administer User, I want to be able to modify products
+ - As a Administer User, I want to be able to view orders
+ - As a Administer User, I want public to register
 
-## Updates Since The Instructional Video
+#### Developer User
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+ - As a Developer User, I want site to be secure
+ - As a Developer User, I want site to be responsive
+ - As a Developer User, I want to be error free
+ - As a Developer User, I want to build a website that is scalable and that can be enhanced with further development
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Strategy
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Scope
 
---------
+The scope of the site was to provide a ecommerce website for a new up and coming cycle shop, and to demonstrate the skills that I learnt on the Coding Institute Full Stack Developers course, HTML, CSS, JQuery, Python, Django python,
 
-Happy coding!
+### Structure
+
+The Navigation bar is fixed to the top of the screen so that it’s available at all times.
+
+The shopping cart is always visible and accessible for the user, so there is a different CSS for mobile views so that it doesn’t collapse into the mobile nav icon.
+
+The user can select all products, or refine their query using the categories or subcategories
+
+The search functionally allows a user to search within the name and display all products that match.
+
+The page restricts the amount of products to 6 and there is pagination functionality to allow the user to scan through the products on other pages.
+
+The product details page allows to user to view more information on the product
+
+The shopping cart page allows the user to adjust / delete items and also proceed to checkout. To enhance user experience I have removed the table slider on mobile views, instead I have modified the form so that its only contains the necessary information
+
+The checkout page allows the user to enter in their name and address for delivery, and also make a credit card payment.
+
+The contact page allows the user to enter a message for the administrator of the website
+
+The footer contains links to all social media
+
+## Technology Used
+###	Languages, Frameworks, Editors, Version Control
+
+ - HTML, CSS, JS and Python 
+ - Django 
+ - Bootstrap Framework
+ - GitHub Used to store the repository, keep version control, and push link to Heroko 
+ - Heroku 
+
+### Tools Used
+- Balsamiq Used to create wireframes
+- W3C HTML Validator used to check HTML code
+- W3C CSS Validator used to check CSS code
+- htmlformatter.com used to beautify the HTML code
+- Font Awesome Icons
+- Favicon Generator
+- Google Chrome DevTools
+- AWS Amazon
+-	Stripe
