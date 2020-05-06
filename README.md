@@ -252,6 +252,8 @@ The footer contains links to all social media
 
 Need to add in html testing css testing and python 
 
+
+## Deployment 
 AWS setup 
 1.	Create an account on https://aws.amazon.com and log into account 
 2.	Connect to S3 and create a new bucket , give it a name and untick all the public blocks 
@@ -342,5 +344,13 @@ os.environ.setdefault("EMAIL_PW'", "<enter key here>")
     python manage.py makemigration
     python manage.py migrate
     ```
-
+10. Create a superuser with the following command 
+    ```
+    python manage.py createsuperuser
+    ```
+11. Commit everything to github
+12. Log into Heroku and setup your settings using the data in step 6 
+13. Link your Heroku application to the new repository 
+14. click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
+15. Test the deployed application. 
 
