@@ -338,9 +338,9 @@ os.environ.setdefault("EMAIL_PW'", "<enter key here>")
 8.  Edit the settings.py file and change so that if has the name of your AWS bucket
    ```
    AWS_STORAGE_BUCKET_NAME = 'cycleology'
-      ```
+    ```
 9. open a terminal in Gitpod and type the following 
- ```
+    ```
     python manage.py makemigration
     python manage.py migrate
     ```
