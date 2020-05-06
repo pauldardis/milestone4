@@ -146,3 +146,10 @@ The footer contains links to all social media
 |order   |models.ForeignKey(Order, null=False)|
 |product   |models.ForeignKey(Product, null=False)|
 |quantity |models.IntegerField(blank=False)|
+
+
+## Testing
+
+|Fuctionality               | Page    | User Type | Browser | Pass / Fail | Comments |
+| ----| ---- | ---- |  ---- | ---- | ---- |
+| a |  b | c  | d  |  e |  f |
