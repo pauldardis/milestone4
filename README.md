@@ -254,7 +254,7 @@ Need to add in html testing css testing and python
 
 
 ## Deployment 
-AWS setup 
+### AWS setup 
 1.	Create an account on https://aws.amazon.com and log into account 
 2.	Connect to S3 and create a new bucket , give it a name and untick all the public blocks 
 3.	Go into your new bucket and select properties and then STATIC WEBSITE HOSTING
@@ -307,11 +307,11 @@ AWS setup
 9.	Now add a user and down load the csv file and keep it safe you will use this later.
 10.	Test the bucket by uploading a test image file to it 
 
-Strip account 
+### Strip account 
 1.	Setup a Stipe account 
 2.	Log into the dashboard and copy API keys 
 
-GitHub and GITPOD
+### GitHub and GITPOD
 1.	Save a copy of the githup repository https://github.com/pauldardis/milestone4 by clicking on the "download zip" button and extract the file file to your chosen folder.
 2.  go to https://github.com/Code-Institute-Org/gitpod-full-template and select "Use this template" and give the Repository a name.
 3.  Open the repository using gitpod
