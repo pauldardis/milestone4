@@ -246,3 +246,101 @@ The footer contains links to all social media
 |	Footer is displayed correctly on all pages 	|	 n/a	|		|	Mobile	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
 |	Social Media links in footer all work 	|	 n/a	|		|	Chrome	|		|		|		|
 |	Social Media links in footer all work 	|	 n/a	|		|	Mobile	|		|		|		|
+
+
+
+
+Need to add in html testing css testing and python 
+
+AWS setup 
+1.	Create an account on https://aws.amazon.com and log into account 
+2.	Connect to S3 and create a new bucket , give it a name and untick all the public blocks 
+3.	Go into your new bucket and select properties and then STATIC WEBSITE HOSTING
+4.	Now go into permissions and select CORS configuration and add the following
+```
+<CORSConfiguration>
+<CORSRule>
+<AllowedOrigin>*</AllowedOrigin>
+<AllowedMethod>GET</AllowedMethod>
+<MaxAgeSeconds>3000</MaxAgeSeconds>
+<AllowedHeader>Authorization</AllowedHeader>
+</CORSRule>
+</CORSConfiguration>
+```
+5.	Now go into permissions and select Bucket Policy and add the following 
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::cycleology/*"
+        }
+    ]
+}
+
+```
+6.	Connect to IAM and create a group 
+7.	Now create a policy using AmazonS3FullAccess and add the following 
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3::: cycleology ",
+                "arn:aws:s3::: cycleology /*"
+            ]
+        }
+    ]
+}
+```
+8.	Assign the policy to the group 
+9.	Now add a user and down load the csv file and keep it safe you will use this later.
+10.	Test the bucket by uploading a test image file to it 
+
+Strip account 
+1.	Setup a Stipe account 
+2.	Log into the dashboard and copy API keys 
+
+GitHub and GITPOD
+1.	Save a copy of the githup repository https://github.com/pauldardis/milestone4 by clicking on the "download zip" button and extract the file file to your chosen folder.
+2.  go to https://github.com/Code-Institute-Org/gitpod-full-template and select "Use this template" and give the Repository a name.
+3.  Open the repository using gitpod
+4.  Copy the files in step 1 into Gitpod.
+5.  Install all required modules with the command 
+    ```
+    pip -r requirements.txt.
+    ```
+6.  create a env.py file and add the following 
+   ```
+   import os
+
+os.environ.setdefault("STRIPE_PUBLISHABLE","<enter key here>")
+os.environ.setdefault("STRIPE_SECRET","<enter key here>")
+os.environ.setdefault("DATABASE_URL","<enter key here>")
+os.environ.setdefault("SECRET_KEY", "<enter key here>")
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "<enter key here>")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<enter key here>")
+os.environ.setdefault("EMAIL", "<email address>")
+os.environ.setdefault("EMAIL_PW'", "<enter key here>")
+   ```
+
+7.  Create a .gitignore file and add the env.py file name. 
+8.  Edit the settings.py file and change so that if has the name of your AWS bucket
+   ```
+   AWS_STORAGE_BUCKET_NAME = 'cycleology'
+      ```
+9. open a terminal in Gitpod and type the following 
+ ```
+    python manage.py makemigration
+    python manage.py migrate
+    ```
+
+
