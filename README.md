@@ -150,8 +150,8 @@ The footer contains links to all social media
 
 ## Testing
 
-|Fuctionality               | Page    | User Type | Browser | Pass / Fail | Comments |
-| ----| ---- | ---- |  ---- | ---- | ---- |
+|Fuctionality               | Page    | User Type | Browser | Initial test Pass / Fail  |Final test Pass / Fail |Comments |
+| ----| ---- | ---- |  ---- | ---- | ---- | ---- |
 |	Image Carousel is it display correctly	|	 Home Page 	|	Registered User	|	Chrome	|	Pass	|		|		|
 |	Image Carousel is it display correctly	|	 Home Page 	|	Public User	|	Chrome	|	Pass	|		|		|
 |	Image Carousel is it display correctly and responsive 	|	 Home Page 	|	Registered User	|	Mobile	|	Pass	|		|		|
@@ -161,7 +161,6 @@ The footer contains links to all social media
 |	Text on about page is it displaying correctly 	|	About Page	|	Registered User	|	Mobile	|	Pass	|		|		|
 |	Text on about page is it displaying correctly 	|	About Page	|	Public User	|	Mobile	|	Pass	|		|		|
 |	Text on about page are there any spelling mistakes	|	About Page	|		|		|	Fail 	|	Pass	|	Spelling errors fixed 	|
-|		|		|		|		|		|		|		|
 |	Form is displaying correctly 	|	Contact Page	|	Registered User	|	Chrome	|	Pass	|		|		|
 |	Form is displaying correctly 	|	Contact Page	|	Public User	|	Chrome	|	Pass	|		|		|
 |	Form is displaying correctly and responsive	|	Contact Page	|	Registered User	|	Mobile	|	Pass	|		|		|
@@ -174,7 +173,6 @@ The footer contains links to all social media
 |	link to phone opens default phone application 	|	Contact Page	|		|	Mobile	|	Fail	|	Pass 	|	Link missing 	|
 |	link to google maps l opens default google maps in new tab	|	Contact Page	|		|	Chrome	|	Fail	|	Pass	|	Link missing 	|
 |	link to google maps opens default google maps in new tab	|	Contact Page	|		|	Mobile	|	Fail	|	Pass 	|	Link missing 	|
-|		|		|		|		|		|		|		|
 |	Product card displays correctly 	|	Products	|		|	Chrome	|	Pass	|		|		|
 |	Images are all uniform across all cards 	|	Products	|		|	Chrome	|	Pass	|		|		|
 |	Names are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|		|	Issues with length 	|
@@ -185,7 +183,6 @@ The footer contains links to all social media
 |	Price are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
 |	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
 |	Order buttons are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
-|		|		|		|		|		|		|		|
 |	Product card displays correctly 	|	Products	|		|	Mobile	|	Pass	|		|		|
 |	Six product cards is the maximum shown on 1 page 	|	Products	|		|	Chrome	|	Pass	|		|		|
 |	pagination allows the customer to move forward and back to view more products 	|	Products	|		|	Chrome	|	Pass	|		|		|
@@ -201,7 +198,6 @@ The footer contains links to all social media
 |	Users can adjust quantity of product 	|	Products	|		|	Mobile	|	Pass	|		|		|
 |	Value of zero is not allowed 	|	Products	|		|	Mobile	|	Pass	|		|		|
 |	Clicking on the product card brings the user to a detail product page 	|	Products	|		|	Mobile	|	Pass	|		|		|
-|		|		|		|		|		|		|		|
 |	Product details displays correctly 	|	Product details 	|		|	Chrome	|	Pass	|		|		|
 |	Product details displays correctly 	|	Product details 	|		|	Mobile	|	Pass	|		|		|
 |	Image Carousel is it display correctly	|	Product details 	|		|	Chrome	|	Pass	|		|		|
@@ -214,7 +210,6 @@ The footer contains links to all social media
 |	User can see text on product discription tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
 |	User can see text on Product Into tab	|	Product details 	|		|	Chrome	|	Pass	|		|		|
 |	User can see text on Product Into tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
-|		|		|		|		|		|		|		|
 |	Shoping cart is displayed correctly 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
 |	Shoping cart is displayed correctly 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
 |	User can adjust quantity 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
@@ -225,7 +220,6 @@ The footer contains links to all social media
 |	Users can preceed to Checkout 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
 |	Users can continue shopping 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
 |	Users can continue shopping 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
-|		|		|		|		|		|		|		|
 |	Checkout displays all products correctly 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
 |	Checkout displays all products correctly 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
 |	User can add in details into order form 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
@@ -234,7 +228,6 @@ The footer contains links to all social media
 |	User can make payment with valid credit card 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
 |	Paymnet is rejected if credit card is invalid 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
 |	Paymnet is rejected if credit card is invalid 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
-|		|		|		|		|		|		|		|
 |	Navbar is dispayed correctly and fixed to the top 	|	n/a	|		|	Chrome	|	Pass	|		|		|
 |	Navbar is dispayed correctly and fixed to the top 	|	n/a	|		|	Mobile	|	Pass	|		|		|
 |	Shoping cart gets updated when products added 	|	n/a	|		|	Chrome	|	Pass	|		|		|
@@ -249,7 +242,6 @@ The footer contains links to all social media
 |	Register and login are visable when user not logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
 |	Profile and Log out  is displayed when user loged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
 |	Profile and Log out  is displayed when user loged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|		|		|		|		|		|		|		|
 |	Footer is displayed correctly on all pages 	|	 n/a	|		|	Chrome	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
 |	Footer is displayed correctly on all pages 	|	 n/a	|		|	Mobile	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
 |	Social Media links in footer all work 	|	 n/a	|		|	Chrome	|		|		|		|
