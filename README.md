@@ -152,4 +152,105 @@ The footer contains links to all social media
 
 |Fuctionality               | Page    | User Type | Browser | Pass / Fail | Comments |
 | ----| ---- | ---- |  ---- | ---- | ---- |
-| a |  b | c  | d  |  e |  f |
+|	Image Carousel is it display correctly	|	 Home Page 	|	Registered User	|	Chrome	|	Pass	|		|		|
+|	Image Carousel is it display correctly	|	 Home Page 	|	Public User	|	Chrome	|	Pass	|		|		|
+|	Image Carousel is it display correctly and responsive 	|	 Home Page 	|	Registered User	|	Mobile	|	Pass	|		|		|
+|	Image Carousel is it display correctly and responsive 	|	 Home Page 	|	Public User	|	Mobile	|	Pass	|	
+|	Text on about page is it displaying correctly 	|	About Page	|	Registered User	|	Chrome	|	Pass	|		|		|
+|	Text on about page is it displaying correctly 	|	About Page	|	Public User	|	Chrome	|	Pass	|		|		|
+|	Text on about page is it displaying correctly 	|	About Page	|	Registered User	|	Mobile	|	Pass	|		|		|
+|	Text on about page is it displaying correctly 	|	About Page	|	Public User	|	Mobile	|	Pass	|		|		|
+|	Text on about page are there any spelling mistakes	|	About Page	|		|		|	Fail 	|	Pass	|	Spelling errors fixed 	|
+|		|		|		|		|		|		|		|
+|	Form is displaying correctly 	|	Contact Page	|	Registered User	|	Chrome	|	Pass	|		|		|
+|	Form is displaying correctly 	|	Contact Page	|	Public User	|	Chrome	|	Pass	|		|		|
+|	Form is displaying correctly and responsive	|	Contact Page	|	Registered User	|	Mobile	|	Pass	|		|		|
+|	Form is displaying correctly and responsive	|	Contact Page	|	Public User	|	Mobile	|	Pass	|		|		|
+|	Form checks that  fields are filled in before sending 	|	Contact Page	|		|		|	Pass	|		|		|
+|	Text on about page are there any spelling mistakes	|	Contact Page	|		|		|	Pass	|		|		|
+|	link to email opens default email application 	|	Contact Page	|		|	Chrome	|	Fail	|	Pass	|	Link missing 	|
+|	link to email opens default email application 	|	Contact Page	|		|	Mobile	|	Fail	|	Pass 	|	Link missing 	|
+|	link to phone  opens default phone application 	|	Contact Page	|		|	Chrome	|	Fail	|	Pass	|	Link missing 	|
+|	link to phone opens default phone application 	|	Contact Page	|		|	Mobile	|	Fail	|	Pass 	|	Link missing 	|
+|	link to google maps l opens default google maps in new tab	|	Contact Page	|		|	Chrome	|	Fail	|	Pass	|	Link missing 	|
+|	link to google maps opens default google maps in new tab	|	Contact Page	|		|	Mobile	|	Fail	|	Pass 	|	Link missing 	|
+|		|		|		|		|		|		|		|
+|	Product card displays correctly 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Images are all uniform across all cards 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Names are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|		|	Issues with length 	|
+|	Price are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|		|	Issues with length 	|
+|	Names are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|		|	Issues with length 	|
+|	Order buttons are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|		|	Issues with length 	|
+|	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
+|	Price are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
+|	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
+|	Order buttons are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
+|		|		|		|		|		|		|		|
+|	Product card displays correctly 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	Six product cards is the maximum shown on 1 page 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	pagination allows the customer to move forward and back to view more products 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	pagination allows the customer to move forward and back to view more products 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Clicking on the Buy button adds product to cart 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Users can adjust quantity of product 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Value of zero is not allowed 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Clicking on the product card brings the user to a detail product page 	|	Products	|		|	Chrome	|	Pass	|		|		|
+|	Six product cards is the maximum shown on 1 page 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	pagination allows the customer to move forward and back to view more products 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	pagination allows the customer to move forward and back to view more products 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	Clicking on the Buy button adds product to cart 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	Users can adjust quantity of product 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	Value of zero is not allowed 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|	Clicking on the product card brings the user to a detail product page 	|	Products	|		|	Mobile	|	Pass	|		|		|
+|		|		|		|		|		|		|		|
+|	Product details displays correctly 	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	Product details displays correctly 	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	Image Carousel is it display correctly	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	Image Carousel is it display correctly	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	User can add itdem to cart	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	User can add itdem to cart	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	User can adjust quantity	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	User can adjust quantity	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	User can see text on product discription tab	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	User can see text on product discription tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	User can see text on Product Into tab	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	User can see text on Product Into tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|		|		|		|		|		|		|		|
+|	Shoping cart is displayed correctly 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	Shoping cart is displayed correctly 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|	User can adjust quantity 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	User can adjust quantity 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|	Users can delete items 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	Users can delete items 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|	Users can preceed to Checkout 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	Users can preceed to Checkout 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|	Users can continue shopping 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	Users can continue shopping 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|		|		|		|		|		|		|		|
+|	Checkout displays all products correctly 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
+|	Checkout displays all products correctly 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
+|	User can add in details into order form 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
+|	User can add in details into order form 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
+|	User can make payment with valid credit card 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
+|	User can make payment with valid credit card 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
+|	Paymnet is rejected if credit card is invalid 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
+|	Paymnet is rejected if credit card is invalid 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
+|		|		|		|		|		|		|		|
+|	Navbar is dispayed correctly and fixed to the top 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Navbar is dispayed correctly and fixed to the top 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Shoping cart gets updated when products added 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Shoping cart gets updated when products added 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	All links work correctly  	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	All links work correctly  	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Search fuctionality works correctly 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Search fuctionality works correctly 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Shopping cart is visable in Nav bar when collapsed for pc	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Shopping cart is visable in Nav bar when collapsed for mobile 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Register and login are visable when user not logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Register and login are visable when user not logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Profile and Log out  is displayed when user loged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Profile and Log out  is displayed when user loged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|		|		|		|		|		|		|		|
+|	Footer is displayed correctly on all pages 	|	 n/a	|		|	Chrome	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
+|	Footer is displayed correctly on all pages 	|	 n/a	|		|	Mobile	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
+|	Social Media links in footer all work 	|	 n/a	|		|	Chrome	|		|		|		|
+|	Social Media links in footer all work 	|	 n/a	|		|	Mobile	|		|		|		|
