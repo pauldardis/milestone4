@@ -23,7 +23,7 @@ def add_to_cart(request, id):
         'Item added to your cart. ')
     messages.success(
         request, message)
-    return redirect(reverse('index'))
+    return redirect(reverse('shop'))
 
 
 
