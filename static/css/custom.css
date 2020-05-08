@@ -37,7 +37,6 @@ a, a:hover, a:focus {
     background: #fff;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -96,6 +95,16 @@ a, a:hover, a:focus {
     background: #343a40;
     padding: 40px;
 
+
+}
+
+.row {
+    margin: 0px
+}
+
+.wrapper{
+    min-height: calc(100vh - 236px);
+    padding-top: 40px;
 
 }
 
@@ -659,7 +668,10 @@ footer a {
 
 
 
+.navbar{
+    margin-bottom: 0px;
 
+}
 
 @media (max-width: 992px) {
     .navbar-header {

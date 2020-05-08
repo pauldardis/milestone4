@@ -32,7 +32,7 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fix-top">
-            <a class="navbar-brand nav-logo" href="/"> <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/LOGO-SMALL.jpg" class="d-inline-block align-center" alt="Logo for CycleOlogy" /> CycleOlogy </a>
+            <a class="navbar-brand nav-logo" href="/"> <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/LOGO-SMALL.jpg" class="d-inline-block align-center" alt="Logo for CycleOlogy" >CycleOlogy</a>
 
             <div id="navbar-icons-mobile" class="d-lg-none">
                 <a class="nav-link nav-link-icon text-warning" href="{% url 'view_cart' %}" title="Shopping cart">
@@ -109,6 +109,7 @@
                             </form>
                         </div>
                     </li>
+                    
                 </ul>
                 <div class="form-inline my-2 my-lg-0 float-lg-right">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -143,7 +144,8 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container wrapper">
+  
             {% if messages %}
             <div class="alert alert-success">
                 <div class="messages">
