@@ -21,7 +21,7 @@
 
 ***
 ## Welcome to CycleOlogy 
-
+https://travis-ci.org/pauldardis/milestone4.svg?branch=master
 Link to live demo [CycleOlogy](https://cycleology.herokuapp.com/ "CycleOlogy")
 
 
