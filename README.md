@@ -281,15 +281,33 @@ os.environ.setdefault("AWS_ACCESS_KEY_ID", "<enter key here>")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<enter key here>")
    ```
 11. Add `env.py` to `.gitignore` file
-12. Go into the terminal and runn the following 
-'python3 manage.py makemigrations`
+12. Go into the terminal and run the following 
+`python3 manage.py makemigrations`
 `python3 manage.py migrate`
+'python3 manage.py collectstatic'
 13. Create a superuser 
-`python3 manage.py createsuperuser'
 14. Run the server 
 `python manage.py runserver`
-15. Open `localhost:8000` on your browser
+15. in terminal run the following 
+`git add --all`
+`git commit -m "initial commit"`
+`git push`
+16. Open `localhost:8000` on your browser
 
+### Running Code on Heroku
+1.  Create a new app in Heroku
+2.  Go into add-ons and add Heroku Postgres 
+3.  Go into terminal on your IDE and enter the following 
+`pip3 install dj-database-url` 
+`pip3 install psycopg2`
+`pip3 freeze > requirements.txt`
+4.   Go into the terminal and run the following 
+`python3 manage.py makemigrations`
+`python3 manage.py migrate`
+`python3 manage.py collectstatic`
+5.  In Heroku click on settings and then Reveal Config Vars and add the following from the env.py file.
+6.  Connect the Heroku app to the GitHub
+7.  In Heroku select Deploy Branch
 
 
 
