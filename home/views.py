@@ -19,6 +19,10 @@ def contact(request):
     return render(request, "contact.html")
 
 
+def contact_success(request):
+    """A view that displays the index page"""
+    return render(request, "contact_success.html")
+
 def spare(request):
     """A view that displays the index page"""
     return render(request, "spare.html")

@@ -1,7 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="container mt-4">
-</div>
 
 <div class="account-form">
     <section class="mb-4">
@@ -9,44 +7,45 @@
         <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
         <div class="row">
             <div class="col-md-9 mb-md-0 mb-5">
-                <form action="{% url 'send_email' %}" required method="POST">
-                    {% csrf_token %}
+                <form id="myform">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" name="name" class="form-control" required id="form_name" placeholder="Your name">
                                 <label for="name" class="">Your name</label>
+                                <input type="text"  name="user_name" class="form-control" placeholder="Your name">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="email" name="from_email" class="form-control" required id="form_email" placeholder="name@example.com">
                                 <label for="email" class="">Your email</label>
+                                <input type="email" name="user_email" class="form-control" placeholder="name@example.com">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control" required>
                                 <label for="subject" class="">Subject</label>
+                                <input type="text" name="contact_number" class="form-control" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-
                             <div class="md-form">
-                                <textarea class="form-control" id="form_message" rows="3" required name="text"></textarea>
                                 <label for="message">Your message</label>
+                                <textarea class="form-control" name="message" rows="3" required></textarea>
                             </div>
-
                         </div>
                     </div>
-                    <div class="text-center text-md-left">
-                        <button type="submit" class="btn btn-success">Send</button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center text-md-left contact-send">
+                                <button class="btn btn-success">Send</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="status"></div>
+
                 </form>
 
             </div>
@@ -66,5 +65,8 @@
         </div>
     </section>
 </div>
+
+
+
 
 {% endblock %}
