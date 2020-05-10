@@ -2,7 +2,8 @@
 
 # CycleOlogy - Milestone Project 4
 ***
-[![dd](as "t")](https://github.com/pauldardis/milestone4/blob/master/media/images/cycleology.PNG)
+![enter image description here](https://github.com/pauldardis/milestone4/blob/master/media/images/cycleology.PNG)
+
 ## Table of Contents
 
  * List item
