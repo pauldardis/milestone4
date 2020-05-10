@@ -18,15 +18,15 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/DSC_7193_7521154F+(1).jpg" alt="shop" style="width:100%;">
+                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/DSC_7193_7521154F+(1).jpg" alt="shop" style="width: 100%;" />
             </div>
 
             <div class="item">
-                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/DSC_7198_566CBC15+(1).jpg" alt="shop" style="width:100%;">
+                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/DSC_7198_566CBC15+(1).jpg" alt="shop" style="width: 100%;" />
             </div>
 
             <div class="item">
-                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/DSC_7196_24728ADA+(1).jpg" alt="shop" style="width:100%;">
+                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/DSC_7196_24728ADA+(1).jpg" alt="shop" style="width: 100%;" />
             </div>
         </div>
 
@@ -40,6 +40,29 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div class="d-flex justify-content-center ">
+        <div class="products-filters row">
+            <div class="col-6 offset-sm-1 col-sm-2 d-flex justify-content-center ">
+                <a href="{% url 'assessory_products' %}" class="btn btn-products-filter"><h5>Accessories</h5></a>
+            </div>
+            <div class="col-6 col-sm-2 d-flex justify-content-center">
+                <a href="{% url 'components_products' %}" class="btn btn-products-filter"><h5>Components</h5></a>
+            </div>
+            <div class="col-6 col-sm-2 d-flex justify-content-center ">
+                <a href="{% url 'nutrition_products' %}" class="btn btn-products-filter"><h5>Nutrition</h5></a>
+            </div>
+            <div class="col-6 col-sm-2 d-flex justify-content-center ">
+                <a href="{% url 'workshop_products' %}" class="btn btn-products-filter"><h5>Workshop</h5></a>
+            </div>
+        </div>
+    </div>
+                <div  class="d-lg-none text-center">
+                <div>
+                <img src="https://cycleology.s3-eu-west-1.amazonaws.com/media/images/skull-image.png" alt="">
+
+                </div>
+
+            </div>
 </div>
 
 {% endblock %}
