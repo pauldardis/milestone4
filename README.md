@@ -7,7 +7,7 @@
 ## Table of Contents
 
  * List item
- *	Fuctionality of the Project
+ * Functionality of the Project
  *	User Experience 
 	 *	User Stories
 	 *	Design 
@@ -95,7 +95,7 @@ The footer contains links to all social media
  - HTML, CSS, JS and Python 
  - Django 
  - Bootstrap Framework
- - GitHub Used to store the repository, keep version control, and push link to Heroko 
+ - GitHub Used to store the repository, keep version control, and push link to Heroku 
  - Heroku 
 
 ### Tools Used
@@ -115,7 +115,7 @@ The footer contains links to all social media
 
 |Name                | Format     | 
 | ------------------ | --------------- | 
-|catagory | models.CharField(max_length=254, choices=PRODUCT_CATAGORY) |
+|category | models.CharField(max_length=254, choices=PRODUCT_CATAGORY) |
 |subcatagory | models.CharField(max_length=254, choices=PRODUCT_SUBCATAGORY) |
 |name | models.CharField(max_length=254, default='') |
 |product_summary | models.TextField(default='') |
@@ -152,7 +152,7 @@ The footer contains links to all social media
 
 ## Testing
 
-|Fuctionality               | Page    | User Type | Browser | Initial test Pass / Fail  |Final test Pass / Fail |Comments |
+|Fuctionality             | Page    | User Type | Browser | Initial test Pass / Fail  |Final test Pass / Fail |Comments |
 | ----| ---- | ---- |  ---- | ---- | ---- | ---- |
 |	Image Carousel is it display correctly	|	 Home Page 	|	Registered User	|	Chrome	|	Pass	|		|		|
 |	Image Carousel is it display correctly	|	 Home Page 	|	Public User	|	Chrome	|	Pass	|		|		|
