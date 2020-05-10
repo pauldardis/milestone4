@@ -307,10 +307,6 @@ os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<enter key here>")
 `python3 manage.py collectstatic`
 5.  In Heroku click on settings and then Reveal Config Vars and add the following from the env.py file.
 
-|Name                | Format     | 
-| ------------------ | --------------- | 
-|order   |models.ForeignKey(Order, null=False)|
-
 |  Key Name                | Value   | 
 | ------------------ | --------------- | 
 | STRIPE_PUBLISHABLE | secret key|
