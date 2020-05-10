@@ -16,6 +16,8 @@
                                 <h4 class="card-title text-center">
                     <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
                     </h4>
+                            </div>
+                            <div class="card-bottom">
                                 <h5 class="text-center">€{{ product.price }}</h5>
                                 <div class="d-flex justify-content-center">
                                     <form class="form-inline" method="post" action="{% url 'add_to_cart' product.id %}">
