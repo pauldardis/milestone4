@@ -2,7 +2,7 @@
 
 # CycleOlogy - Milestone Project 4
 ***
-![enter image description here](https://github.com/pauldardis/milestone4/blob/master/media/images/cycleology.PNG)
+![CycleOlogy](https://github.com/pauldardis/milestone4/blob/master/media/images/cycleology.PNG)
 
 ## Table of Contents
 
@@ -22,7 +22,8 @@
 ***
 ## Welcome to CycleOlogy 
 
-![enter image description here](https://cycleology.s3-eu-west-1.amazonaws.com/media/images/LOGO-SMALL.jpg)
+Link to live demo [CycleOlogy](https://cycleology.herokuapp.com/ "CycleOlogy")
+
 
 ***
 ## User Experience
