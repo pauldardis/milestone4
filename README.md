@@ -2,7 +2,7 @@
 
 # CycleOlogy - Milestone Project 4
 ***
-[![z\z\z](as "z\z\z")](/media/images/cycleology.PNG)
+[![dd](as "t")](https://github.com/pauldardis/milestone4/blob/master/media/images/cycleology.PNG)
 ## Table of Contents
 
  * List item
