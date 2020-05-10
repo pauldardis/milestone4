@@ -152,7 +152,7 @@ The footer contains links to all social media
 
 ## Testing
 
-|Fuctionality             | Page    | User Type | Browser | Initial test Pass / Fail  |Final test Pass / Fail |Comments |
+|functionality              | Page    | User Type | Browser | Initial test Pass / Fail  |Final test Pass / Fail |Comments |
 | ----| ---- | ---- |  ---- | ---- | ---- | ---- |
 |	Image Carousel is it display correctly	|	 Home Page 	|	Registered User	|	Chrome	|	Pass	|		|		|
 |	Image Carousel is it display correctly	|	 Home Page 	|	Public User	|	Chrome	|	Pass	|		|		|
@@ -204,22 +204,22 @@ The footer contains links to all social media
 |	Product details displays correctly 	|	Product details 	|		|	Mobile	|	Pass	|		|		|
 |	Image Carousel is it display correctly	|	Product details 	|		|	Chrome	|	Pass	|		|		|
 |	Image Carousel is it display correctly	|	Product details 	|		|	Mobile	|	Pass	|		|		|
-|	User can add itdem to cart	|	Product details 	|		|	Chrome	|	Pass	|		|		|
-|	User can add itdem to cart	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	User can add item to cart	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	User can add item to cart	|	Product details 	|		|	Mobile	|	Pass	|		|		|
 |	User can adjust quantity	|	Product details 	|		|	Chrome	|	Pass	|		|		|
 |	User can adjust quantity	|	Product details 	|		|	Mobile	|	Pass	|		|		|
-|	User can see text on product discription tab	|	Product details 	|		|	Chrome	|	Pass	|		|		|
-|	User can see text on product discription tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
+|	User can see text on product description tab	|	Product details 	|		|	Chrome	|	Pass	|		|		|
+|	User can see text on product description tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
 |	User can see text on Product Into tab	|	Product details 	|		|	Chrome	|	Pass	|		|		|
 |	User can see text on Product Into tab	|	Product details 	|		|	Mobile	|	Pass	|		|		|
-|	Shoping cart is displayed correctly 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
-|	Shoping cart is displayed correctly 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|	Shopping  cart is displayed correctly 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	Shopping  cart is displayed correctly 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
 |	User can adjust quantity 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
 |	User can adjust quantity 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
 |	Users can delete items 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
 |	Users can delete items 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
-|	Users can preceed to Checkout 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
-|	Users can preceed to Checkout 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
+|	Users can proceed  to Checkout 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
+|	Users can proceed  to Checkout 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
 |	Users can continue shopping 	|	Shopping cart	|		|	Chrome	|	Pass	|		|		|
 |	Users can continue shopping 	|	Shopping cart	|		|	Mobile	|	Pass	|		|		|
 |	Checkout displays all products correctly 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
@@ -228,22 +228,22 @@ The footer contains links to all social media
 |	User can add in details into order form 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
 |	User can make payment with valid credit card 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
 |	User can make payment with valid credit card 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
-|	Paymnet is rejected if credit card is invalid 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
-|	Paymnet is rejected if credit card is invalid 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
-|	Navbar is dispayed correctly and fixed to the top 	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Navbar is dispayed correctly and fixed to the top 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Shoping cart gets updated when products added 	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Shoping cart gets updated when products added 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Payment  is rejected if credit card is invalid 	|	Checkout	|		|	Chrome	|	Pass	|		|		|
+|	Payment  is rejected if credit card is invalid 	|	Checkout	|		|	Mobile	|	Pass	|		|		|
+|	Navbar is displayed correctly and fixed to the top 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Navbar is displayed correctly and fixed to the top 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Shopping  cart gets updated when products added 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Shopping  cart gets updated when products added 	|	n/a	|		|	Mobile	|	Pass	|		|		|
 |	All links work correctly  	|	n/a	|		|	Chrome	|	Pass	|		|		|
 |	All links work correctly  	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Search fuctionality works correctly 	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Search fuctionality works correctly 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Shopping cart is visable in Nav bar when collapsed for pc	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Shopping cart is visable in Nav bar when collapsed for mobile 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Register and login are visable when user not logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Register and login are visable when user not logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Profile and Log out  is displayed when user loged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Profile and Log out  is displayed when user loged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Search functionality  works correctly 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Search functionality  works correctly 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Shopping cart isvisible in Nav bar when collapsed for pc	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Shopping cart isvisible in Nav bar when collapsed for mobile 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Register and login arevisible when user not logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Register and login arevisible when user not logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Profile and Log out  is displayed when user logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Profile and Log out  is displayed when user logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
 |	Footer is displayed correctly on all pages 	|	 n/a	|		|	Chrome	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
 |	Footer is displayed correctly on all pages 	|	 n/a	|		|	Mobile	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
 |	Social Media links in footer all work 	|	 n/a	|		|	Chrome	|		|		|		|
@@ -271,7 +271,7 @@ Need to add in html testing css testing and python
 8.  install the project dependencies 
 `pip install -r requirements.txt`
 9.  Create a new file called `env.py`
-10. Enter your envireoment variables 
+10. Enter your environment variables 
    ```
    import os
 
