@@ -306,6 +306,15 @@ os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<enter key here>")
 `python3 manage.py migrate`
 `python3 manage.py collectstatic`
 5.  In Heroku click on settings and then Reveal Config Vars and add the following from the env.py file.
+|Key Name                | Value   | 
+| ------------------ | --------------- | 
+|STRIPE_PUBLISHABLE |secret key|
+|STRIPE_SECRET |secret key|
+|DATABASE_URL |secret key|
+|SECRET_KEY|secret key|
+| AWS_ACCESS_KEY_ID"|secret key|
+|AWS_SECRET_ACCESS_KEY |secret key|
+
 6.  Connect the Heroku app to the GitHub
 7.  In Heroku select Deploy Branch
 
