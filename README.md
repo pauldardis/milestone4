@@ -71,7 +71,7 @@ The scope of the site was to provide a ecommerce website for a new up and coming
 
 The Navigation bar is fixed to the top of the screen so that it’s available at all times.
 
-The shopping cart is always visible and accessible for the user, so there is a different CSS for mobile views so that it doesn’t collapse into the mobile nav icon.
+The shopping cart is always  visible and accessible for the user, so there is a different CSS for mobile views so that it doesn’t collapse into the mobile nav icon.
 
 The user can select all products, or refine their query using the categories or subcategories
 
@@ -181,10 +181,10 @@ The footer contains links to all social media
 |	Price are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|	Pass	|	Issues with length 	|
 |	Names are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|	Pass	|	Issues with length 	|
 |	Order buttons are all uniform across all cards 	|	Products	|		|	Chrome	|	Fail	|	Pass	|	Issues with length 	|
-|	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
-|	Price are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
-|	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
-|	Order buttons are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not visible 	|
+|	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not  visible 	|
+|	Price are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not  visible 	|
+|	Names are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not  visible 	|
+|	Order buttons are all uniform across all cards 	|	Products	|		|	Mobile	|	N/A	|		|	as cards are shown vertically issue with name length  is not  visible 	|
 |	Product card displays correctly 	|	Products	|		|	Mobile	|	Pass	|		|		|
 |	Six product cards is the maximum shown on 1 page 	|	Products	|		|	Chrome	|	Pass	|		|		|
 |	pagination allows the customer to move forward and back to view more products 	|	Products	|		|	Chrome	|	Pass	|		|		|
@@ -238,14 +238,14 @@ The footer contains links to all social media
 |	All links work correctly  	|	n/a	|		|	Mobile	|	Pass	|		|		|
 |	Search functionality  works correctly 	|	n/a	|		|	Chrome	|	Pass	|		|		|
 |	Search functionality  works correctly 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Shopping cart isvisible in Nav bar when collapsed for pc	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Shopping cart isvisible in Nav bar when collapsed for mobile 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Register and login arevisible when user not logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
-|	Register and login arevisible when user not logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Shopping cart is visible in Nav bar when collapsed for pc	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Shopping cart is visible in Nav bar when collapsed for mobile 	|	n/a	|		|	Mobile	|	Pass	|		|		|
+|	Register and login are visible when user not logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
+|	Register and login are visible when user not logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
 |	Profile and Log out  is displayed when user logged in 	|	n/a	|		|	Chrome	|	Pass	|		|		|
 |	Profile and Log out  is displayed when user logged in 	|	n/a	|		|	Mobile	|	Pass	|		|		|
-|	Footer is displayed correctly on all pages 	|	 n/a	|		|	Chrome	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
-|	Footer is displayed correctly on all pages 	|	 n/a	|		|	Mobile	|	fail	|		|	Footer is getting pulled up the page leaving a gap at bottom 	|
+|	Footer is displayed correctly on all pages 	|	 n/a	|		|	Chrome	|	fail	| Pass		|	Footer is getting pulled up the page leaving a gap at bottom 	|
+|	Footer is displayed correctly on all pages 	|	 n/a	|		|	Mobile	|	fail	| Pass		|	Footer is getting pulled up the page leaving a gap at bottom 	|
 |	Social Media links in footer all work 	|	 n/a	|		|	Chrome	|		|		|		|
 |	Social Media links in footer all work 	|	 n/a	|		|	Mobile	|		|		|		|
 
