@@ -329,11 +329,8 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 
 `pip3 freeze > requirements.txt`
 4.   Go into the terminal and run the following 
-
 `python3 manage.py makemigrations`
-
 `python3 manage.py migrate`
-
 `python3 manage.py collectstatic`
 5.  In Heroku click on settings and then Reveal Config Vars and add the following from the env.py file.
 
