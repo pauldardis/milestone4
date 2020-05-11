@@ -6,8 +6,6 @@
 
 ## Table of Contents
 
- * List item
- * Functionality of the Project
  *	User Experience 
 	 *	User Stories
 	 *	Design 
