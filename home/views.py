@@ -33,7 +33,7 @@ def send_email(request):
     subject = request.POST.get('subject')
     message = request.POST.get('text')    
     from_email = request.POST.get('from_email')
-    if subject and message and from_email:
+    if name and subject and message and from_email:
         try:
             send_mail(name, subject, message, from_email, [os.environ.get('EMAIL')])
         except BadHeaderError:
