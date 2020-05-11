@@ -2,7 +2,7 @@
 
 # CycleOlogy - Milestone Project 4
 ***
-![CycleOlogy](https://github.com/pauldardis/milestone4/blob/master/media/images/cycleology.PNG)
+![CycleOlogy](/media/images/cycleology.PNG)
 
 ## Table of Contents
 
@@ -91,7 +91,14 @@ The footer contains links to all social media
 
 ### Wireframes
 
+#### PC Product Page 
+![PC Product Page](/media/images/pc-product-page.png)
+
+#### Mobile Product Page
 ![Mobile Product Page](/media/images/mobile-product-page.png)
+
+#### PC Product Details Page 
+![PC Product Details Page](/media/images/pc-product-details%20.png)
 
 ## Technology Used
 ###	Languages, Frameworks, Editors, Version Control
