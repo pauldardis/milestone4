@@ -89,6 +89,10 @@ The contact page allows the user to enter a message for the administrator of the
 
 The footer contains links to all social media
 
+### Wireframes
+
+![Mobile Product Page](/media/images/mobile-product-page.png)
+
 ## Technology Used
 ###	Languages, Frameworks, Editors, Version Control
 
