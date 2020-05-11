@@ -31,7 +31,7 @@ def spare(request):
 def send_email(request):
     name = request.POST.get('name')
     subject = request.POST.get('subject')
-    message = request.POST.get('message')    
+    message = request.POST.get('text')    
     from_email = request.POST.get('from_email')
     if subject and message and from_email:
         try:
