@@ -47,10 +47,10 @@ def send_email(request):
 #     if subject and message and from_email:
 #         try:
 #             send_mail(subject, message, from_email,  [os.environ.get('EMAIL')])
-#         except BadHeaderError:
-#             return HttpResponse('Invalid header found.')
-#         return render(request, 'contact_success.html')
-#     else:
-#         messages.error(request, "Please fill out all fields")
+        except BadHeaderError:
+            return HttpResponse('Invalid header found.')
+        return render(request, 'contact_success.html')
+    else:
+        messages.error(request, "Please fill out all fields")
       
-#         return redirect(reverse('contact'))
+        return redirect(reverse('contact'))
