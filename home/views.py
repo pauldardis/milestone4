@@ -32,10 +32,10 @@ def send_email(request):
     name = request.POST.get('name')
     subject = request.POST.get('subject')
     message = request.POST.get('text')    
-    from_email = request.POST.get('from_email')
-    if subject and message and from_email:
+    reply_to = request.POST.get('from_email')
+    if subject and message and reply_to:
         try:
-            send_mail(subject, message, from_email, [os.environ.get('EMAIL')])
+            send_mail(subject, message, reply_to, [os.environ.get('EMAIL')])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return render(request, 'contact_success.html')
