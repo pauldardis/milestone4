@@ -308,7 +308,7 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 12. Go into the terminal and run the following 
 `python3 manage.py makemigrations`
 `python3 manage.py migrate`
-`python3 manage.py collectstatic'
+`python3 manage.py collectstatic`
 13. Create a superuser 
 14. Run the server 
 `python manage.py runserver`
