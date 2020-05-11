@@ -352,6 +352,7 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 
 ### Code
 [Paginate](https://simpleisbetterthancomplex.com/tutorial/2016/08/03/how-to-paginate-with-django.html)
+
 [Shopping Cart](https://bootsnipp.com/snippets/ZXKKD)
 
 
