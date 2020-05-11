@@ -260,9 +260,10 @@ The footer contains links to all social media
 |	Social Media links in footer all work 	|	 n/a	|		|	Mobile	|		|		|		|
 
 ### Bugs found 
-1.  Footer was moving up page when there was no content. Tried to fix it to the bottom of the page however it then covered content on large page. with the help from Stephen we fixed this by puting in some CSS code. 
-2.  Backend email wouldnt workspent days trying to fix it...., and the i found it worked on Heroku, ends up its an issue with GITPOD and GMAIL gives back a 405 message when its tested via GITPOD. 
-3.  Images on cards where not reponsive so i set them as background images. 
+1.	Footer was moving up page when there was no content. Tried to fix it to the bottom of the page however it then covered content on large page. with the help from Stephen we fixed this by putting in some CSS code.
+2.	Backend email wouldn’t work spent days trying to fix it...., and the i found it worked on Heroku, ends up it’s an issue with GITPOD and GMAIL gives back a 405 message when its tested via GITPOD.
+3.	Images on cards where not responsive so I set them as background images.
+
 
 
 
