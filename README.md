@@ -265,8 +265,6 @@ The footer contains links to all social media
 3.	Images on cards where not responsive so I set them as background images.
 
 
-
-
 ## Deployment 
 
 #### Prerequisite before deploying
