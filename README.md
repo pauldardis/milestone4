@@ -348,5 +348,12 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 7.  In Heroku select Deploy Branch
 
 
+## Credits 
+
+### Code
+[Paginate](https://simpleisbetterthancomplex.com/tutorial/2016/08/03/how-to-paginate-with-django.html)
+[Shopping Cart](https://bootsnipp.com/snippets/ZXKKD)
 
 
+## Acknowledgements
+Thanks to my mentor Dick Vlaanderen for all the advice and support and also a special big thanks to Stephen from the CodeInstitute who dug me out of a few holes along the way. 
