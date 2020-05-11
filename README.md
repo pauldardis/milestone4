@@ -322,11 +322,8 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 1.  Create a new app in Heroku
 2.  Go into add-ons and add Heroku Postgres 
 3.  Go into terminal on your IDE and enter the following 
-
 `pip3 install dj-database-url` 
-
 `pip3 install psycopg2`
-
 `pip3 freeze > requirements.txt`
 4.   Go into the terminal and run the following 
 `python3 manage.py makemigrations`
