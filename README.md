@@ -268,6 +268,14 @@ Need to add in html testing css testing and python
 
 ## Deployment 
 
+#### Prerequisite before deploying
+1.  An active account on Stripe and have a copy of your API keys 
+2.  An active Postgres database setup on Heroku and you have a copy of the API key
+3.  An active account on AWS with buckets configure to store media and CSS files 
+4.  An email account 
+
+
+
 ### Running Code Locally 
 
 1.  Open the link to the [Github Repository ](https://github.com/pauldardis/milestone4 " Github Repository")
@@ -314,12 +322,18 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 1.  Create a new app in Heroku
 2.  Go into add-ons and add Heroku Postgres 
 3.  Go into terminal on your IDE and enter the following 
+
 `pip3 install dj-database-url` 
+
 `pip3 install psycopg2`
+
 `pip3 freeze > requirements.txt`
 4.   Go into the terminal and run the following 
+
 `python3 manage.py makemigrations`
+
 `python3 manage.py migrate`
+
 `python3 manage.py collectstatic`
 5.  In Heroku click on settings and then Reveal Config Vars and add the following from the env.py file.
 
