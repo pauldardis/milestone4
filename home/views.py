@@ -34,20 +34,10 @@ def send_email(request):
     subject = request.POST.get('subject')
     message = request.POST.get('text')
     from_email = request.POST.get('user_email')
-    the_message = "From: " + name + "Email: " + from_email + "Message: " + message
+    the_message = "From: " + name + " Email: " + from_email + " Message: " + message
     if subject and message and from_email:
         try:
             send_mail(subject, the_message, from_email, [os.environ.get('EMAIL')])
-
-# def send_email(request):
-#     name = request.POST.get('user_name')
-#     subject = request.POST.get('subject')
-#     message = request.POST.get('text')    
-#     from_email = request.POST.get('user_email')
-#     if subject and message and from_email:
-#         try:
-#             send_mail(subject, message, from_email,  [os.environ.get('EMAIL')])
-        except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return render(request, 'contact_success.html')
     else:
