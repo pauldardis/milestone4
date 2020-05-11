@@ -31,11 +31,11 @@ def spare(request):
 def send_email(request):
     name = request.POST.get('name')
     subject = request.POST.get('subject')
-    message = request.POST.get('text')    
-    reply_to = request.POST.get('from_email')
-    if subject and message and reply_to:
+    message = request.POST.get('message')    
+    from_email = request.POST.get('from_email')
+    if subject and message and from_email:
         try:
-            send_mail(subject, message, reply_to, [os.environ.get('EMAIL')])
+            send_mail(subject, message, from_email,   [os.environ.get('EMAIL')])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return render(request, 'contact_success.html')
