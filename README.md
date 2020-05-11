@@ -281,6 +281,9 @@ os.environ.setdefault("DATABASE_URL","<enter key here>")
 os.environ.setdefault("SECRET_KEY", "<enter key here>")
 os.environ.setdefault("AWS_ACCESS_KEY_ID", "<enter key here>")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<enter key here>")
+os.environ.setdefault("EMAIL", "<enter key here>")
+os.environ.setdefault("EMAIL_PW", "<enter key here>")
+os.environ.setdefault("EMAILJS_USER", "<enter key here>")
    ```
 11. Add `env.py` to `.gitignore` file
 12. Go into the terminal and run the following 
@@ -315,8 +318,12 @@ os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<enter key here>")
 | STRIPE_SECRET | secret key|
 | DATABASE_URL | secret key|
 | SECRET_KEY | secret key|
-| AWS_ACCESS_KEY_ID" | secret key |
+| AWS_ACCESS_KEY_ID | secret key |
 | AWS_SECRET_ACCESS_KEY | secret key |
+| EMAIL | secret key |
+| EMAIL_PW | secret key |
+| EMAILJS_USER | secret key |
+
 
 6.  Connect the Heroku app to the GitHub
 7.  In Heroku select Deploy Branch
