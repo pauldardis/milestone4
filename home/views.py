@@ -35,7 +35,7 @@ def send_email(request):
     from_email = request.POST.get('from_email')
     if subject and message and from_email:
         try:
-            send_mail(subject, message, from_email, [os.environ.get('admin_mail')])
+            send_mail(subject, message, from_email, [os.environ.get('EMAIL')])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return render(request, 'contact_success.html')
